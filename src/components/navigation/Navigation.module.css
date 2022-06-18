@@ -2,7 +2,7 @@
     position: fixed;
     width: 500px;
     height: 60px;
-    background-color: rgba(255, 255, 255, 0.53);
+    background-color: rgba(215, 213, 213, 0.27);
     bottom: 15px;
     left:50%;
     margin-left: -250px;
@@ -12,7 +12,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    filter: drop-shadow(1px 10px 3px #000);
+
 }
+
 .container{
     width: 90%;
     display: flex;
@@ -22,15 +25,68 @@
     list-style-type: none;
     /*padding-top: 10px;*/
     /*padding-left: 40px;*/
+    animation: myAnim 1s ease 0s 1 normal forwards;
 }
-a {
+@keyframes myAnim {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.link {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     text-decoration: none;
-    /*font-size: 1.5em;*/
-    color: #000;
+    background-color: white;
+    transform: scale(1);
+    transition: transform 0.9s;
+
 }
 .active {
-    color: #067473;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background-color: #0bdfdd;
+    transform: scale(1);
+    transition: transform 0.9s;
 }
 .link:hover {
-    color: #af230a;
+    background-color: #0af4be;
+    transform: scale(1.2);
+    transition: transform 0.9s;
+}
+.active:hover {
+    background-color: #0af4be;
+    transform: scale(1.2);
+    transition: transform 0.9s;
 }
