@@ -13,7 +13,6 @@
     align-items: center;
     border-radius: 30px;
     filter: drop-shadow(1px 10px 3px #000);
-
 }
 
 .container{
@@ -23,40 +22,53 @@
     align-items: center;
     justify-content: space-evenly;
     list-style-type: none;
-    /*padding-top: 10px;*/
-    /*padding-left: 40px;*/
-    animation: myAnim 1s ease 0s 1 normal forwards;
+    animation: myAnim 1s ease 1s 1 normal forwards;
 }
 @keyframes myAnim {
     0% {
-        transform: scale3d(1, 1, 1);
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-250px);
     }
 
-    30% {
-        transform: scale3d(1.25, 0.75, 1);
+    24% {
+        opacity: 1;
     }
 
     40% {
-        transform: scale3d(0.75, 1.25, 1);
-    }
-
-    50% {
-        transform: scale3d(1.15, 0.85, 1);
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
     }
 
     65% {
-        transform: scale3d(0.95, 1.05, 1);
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
     }
 
-    75% {
-        transform: scale3d(1.05, 0.95, 1);
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
     }
 
     100% {
-        transform: scale3d(1, 1, 1);
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
-
 .link {
     display: inline-block;
     text-align: center;
@@ -66,7 +78,7 @@
     text-decoration: none;
     background-color: white;
     transform: scale(1);
-    transition: transform 0.9s;
+    transition: transform 0.8s;
 
 }
 .active {
@@ -78,15 +90,15 @@
     text-decoration: none;
     background-color: #0bdfdd;
     transform: scale(1);
-    transition: transform 0.9s;
+    transition: transform 0.8s;
 }
 .link:hover {
     background-color: #0af4be;
     transform: scale(1.2);
-    transition: transform 0.9s;
+    transition: transform 0.8s;
 }
 .active:hover {
     background-color: #0af4be;
     transform: scale(1.2);
-    transition: transform 0.9s;
+    transition: transform 0.8s;
 }
