@@ -1,11 +1,16 @@
 .wrapper{
     position: fixed;
-    width: 500px;
+    width: 50%;
     height: 60px;
+    left: calc(-50vw + 50%);
+    right: calc(-50vw + 50%);
+    margin-left: auto;
+    margin-right: auto;
     /*background-color: rgba(255, 254, 254, 0.74);*/
     bottom: 15px;
-    left:50%;
-    margin-left: -250px;
+    /*left:50%;*/
+    /*transform: translateX(-50%);*/
+    /*margin-left: -250px;*/
     padding: 2px;
     box-sizing: border-box;
     display: flex;
@@ -95,7 +100,6 @@
     width: 40px;
     height: 40px;
     text-decoration: none;
-
     transform: scale(1.1);
     transition: transform 0.6s;
     box-shadow: -4px -2px 32px -12px rgb(7, 208, 227) inset;
@@ -114,4 +118,38 @@
     transition: transform 0.6s;
     box-shadow: -4px -2px 32px -12px rgb(7, 208, 227) inset;
     /*box-shadow: inset 17px 17px 34px rgba(0, 0, 0, 0.3), inset -17px -17px 34px rgba(255, 255, 255, 0.3);*/
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 80%;
+        height: 55px;
+    }
+    /*.link{
+        width: 35px;
+        height: 35px;
+    }*/
+}
+@media screen and (max-width: 320px) {
+    .wrapper {
+        width: 90%;
+        height: 50px;
+    }
+    .link{
+        width: 35px;
+        height: 35px;
+    }
+    .active{
+        width: 35px;
+        height: 35px;
+        transform: scale(1.04);
+        transition: transform 0.6s;
+    }
+    .link:hover{
+        transform: scale(1.1);
+        transition: transform 0.6s;
+    }
+    .active:hover{
+        transform: scale(1.1);
+        transition: transform 0.6s;
+    }
 }

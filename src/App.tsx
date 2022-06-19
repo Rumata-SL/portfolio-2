@@ -7,6 +7,7 @@ import {Contacts} from "./components/contacts/Contacts";
 import {Skills} from "./components/skills/Skills";
 // @ts-ignore
 import lines from "./components/profile/video/Lines.mp4"
+import {Works} from "./components/works/Works";
 // @ts-ignore
 // import videoBG from "./components/profile/video/2.mp4"
 // @ts-ignore
@@ -31,8 +32,9 @@ function App() {
                 <Routes>
                     <Route path={"/"} element={<Navigate to={PATH.PROFILE}/>}/>
                     <Route path={PATH.PROFILE} element={<Profile/>}></Route>
-                    <Route path={PATH.CONTACTS} element={<Contacts/>}></Route>
                     <Route path={PATH.SKILLS} element={<Skills/>}></Route>
+                    <Route path={PATH.WORKS} element={<Works/>}></Route>
+                    <Route path={PATH.CONTACTS} element={<Contacts/>}></Route>
                 </Routes>
             </div>
             <div>

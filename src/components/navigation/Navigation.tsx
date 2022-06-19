@@ -6,6 +6,7 @@ export enum PATH {
     PROFILE = "/profile/",
     CONTACTS = "/contacts/",
     SKILLS = "/skills/",
+    WORKS = "/works/",
 }
 
 type IsActive = {
@@ -18,8 +19,9 @@ export const Navigation = () => {
         <div className={style.wrapper}>
             <div className={style.container}>
                 <NavLink className={setActive} to={PATH.PROFILE}></NavLink>
-                <NavLink className={setActive} to={PATH.CONTACTS}></NavLink>
                 <NavLink className={setActive} to={PATH.SKILLS}></NavLink>
+                <NavLink className={setActive} to={PATH.WORKS}></NavLink>
+                <NavLink className={setActive} to={PATH.CONTACTS}></NavLink>
 
             </div>
         </div>
