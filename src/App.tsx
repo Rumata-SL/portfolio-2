@@ -27,7 +27,7 @@ function App() {
         {/*{videoB && <video src={video} autoPlay loop muted/>}*/}
         {/*{videoB && <video src={videoBG} autoPlay loop muted/>}*/}
         <div className={"content"}>
-            <div>
+            <div className={"wrapper"}>
                 <Routes>
                     <Route path={"/"} element={<Navigate to={PATH.PROFILE}/>}/>
                     <Route path={PATH.PROFILE} element={<Profile/>}></Route>
