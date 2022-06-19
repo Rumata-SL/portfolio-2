@@ -7,7 +7,7 @@ export const Contacts = () => {
             <div className={style.container}>
                 <div className={style.containerText}><h3
                     className={style.title}>CONTACTS</h3>
-                    <span className={style.text}>If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below or send an email.</span>
+                    <div className={style.text}>If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below or send an email.</div>
                 </div>
                 <form className={style.form}>
                     {/*<div className={c.inputBlock}>*/}
