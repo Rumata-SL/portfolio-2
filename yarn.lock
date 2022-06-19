@@ -2767,6 +2767,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-typing-effect@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@types/react-typing-effect@npm:2.0.3"
+  dependencies:
+    "@types/react": "*"
+  checksum: d46ad8b0f2fef4f973fdbaff23c330d7968ea00ef1cf9947eae56c5668ff68ed8ecb6b60413c10009169cbad17367c307b31066779457a2916cb30e32bfbae32
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:^18.0.0":
   version: 18.0.14
   resolution: "@types/react@npm:18.0.14"
@@ -9160,10 +9169,12 @@ __metadata:
     "@types/react": ^18.0.0
     "@types/react-dom": ^18.0.0
     "@types/react-router-dom": ^5.3.3
+    "@types/react-typing-effect": ^2.0.3
     react: ^18.2.0
     react-dom: ^18.2.0
     react-router-dom: ^6.3.0
     react-scripts: 5.0.1
+    react-typing-effect: ^2.0.5
     typescript: ^4.4.2
     web-vitals: ^2.1.0
   languageName: unknown
@@ -10101,7 +10112,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -10249,6 +10260,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-dom@npm:^16.13.1":
+  version: 16.14.0
+  resolution: "react-dom@npm:16.14.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    prop-types: ^15.6.2
+    scheduler: ^0.19.1
+  peerDependencies:
+    react: ^16.14.0
+  checksum: 5a5c49da0f106b2655a69f96c622c347febcd10532db391c262b26aec225b235357d9da1834103457683482ab1b229af7a50f6927a6b70e53150275e31785544
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
@@ -10384,6 +10409,27 @@ __metadata:
   bin:
     react-scripts: bin/react-scripts.js
   checksum: 92afa2f245c7092ccc97d5609dc7a2130616262e34da7f15072d9442e2d2e1d4909a91022abd1faac1336eb17c5525a10d9bd43e1ae374c7ec941ca20addca68
+  languageName: node
+  linkType: hard
+
+"react-typing-effect@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "react-typing-effect@npm:2.0.5"
+  dependencies:
+    react: ^16.13.1
+    react-dom: ^16.13.1
+  checksum: c408bdace5953f0567521dd57a8232e773c5d54a9110b6bf852721a66a67e620ba887120f0f4ad1e49fbbb72bb9be4af79a8e1ba07c707bbce88998033f8a438
+  languageName: node
+  linkType: hard
+
+"react@npm:^16.13.1":
+  version: 16.14.0
+  resolution: "react@npm:16.14.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    prop-types: ^15.6.2
+  checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
   languageName: node
   linkType: hard
 
@@ -10821,6 +10867,16 @@ __metadata:
   dependencies:
     xmlchars: ^2.2.0
   checksum: 5636b55cf15f7cf0baa73f2797bf992bdcf75d1b39d82c0aa4608555c774368f6ac321cb641fd5f3d3ceb87805122cd47540da6a7b5960fe0dbdb8f8c263f000
+  languageName: node
+  linkType: hard
+
+"scheduler@npm:^0.19.1":
+  version: 0.19.1
+  resolution: "scheduler@npm:0.19.1"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+  checksum: 73e185a59e2ff5aa3609f5b9cb97ddd376f89e1610579d29939d952411ca6eb7a24907a4ea4556569dacb931467a1a4a56d94fe809ef713aa76748642cd96a6c
   languageName: node
   linkType: hard
 
