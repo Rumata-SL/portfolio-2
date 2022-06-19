@@ -8,6 +8,7 @@ import {Skills} from "./components/skills/Skills";
 // @ts-ignore
 import lines from "./components/profile/video/Lines.mp4"
 import {Works} from "./components/works/Works";
+// import {Links} from "./components/links/Links";
 // @ts-ignore
 // import videoBG from "./components/profile/video/2.mp4"
 // @ts-ignore
@@ -38,6 +39,7 @@ function App() {
                 </Routes>
             </div>
             <div>
+                {/*<Links/>*/}
                 <Navigation/>
             </div>
         </div>
