@@ -9,8 +9,9 @@ export const Profile = () => {
         <div className={style.wrapper}>
             <div className={style.container}>
                 <ReactTypingEffect text={['<Front-end developer/>']}
-                                   typingDelay={5000}
-                                   speed={150}
+                                   typingDelay={4000}
+                                   eraseDelay={8000}
+                                   speed={200}
                                    eraseSpeed={60}
                                    cursor={'|'}
                                    className={style.dev}
