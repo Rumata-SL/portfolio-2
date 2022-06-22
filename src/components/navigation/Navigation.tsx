@@ -22,7 +22,7 @@ export const Navigation = () => {
     return (
         <div className={style.wrapper}>
             <div className={style.container}>
-                <NavLink className={setActive} to={PATH.PROFILE}><CgProfile className={style.icon}/></NavLink>
+                <NavLink className={setActive} to={PATH.PROFILE}><CgProfile className={`${style.icon} ${setActive}`}/></NavLink>
                 <NavLink className={setActive} to={PATH.SKILLS}><GiSkills className={style.icon}/></NavLink>
                 <NavLink className={setActive} to={PATH.WORKS}><AiOutlineProject className={style.icon}/></NavLink>
                 <NavLink className={setActive} to={PATH.CONTACTS}><TiContacts className={style.icon}/></NavLink>

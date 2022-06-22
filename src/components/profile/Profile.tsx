@@ -2,6 +2,7 @@ import React from "react";
 import {Links} from "../links/Links";
 import style from "./Profile.module.css"
 import ReactTypingEffect from "react-typing-effect";
+import photo from "./2.5528a6dc.jpg"
 
 
 export const Profile = () => {
@@ -16,7 +17,10 @@ export const Profile = () => {
                                    cursor={'|'}
                                    className={style.dev}
                 />
-
+                <div className={style.avatar} >
+                    {/*<img src={photo} alt="photo" width={300}/>*/}
+                    <div className={style.avatarImg}></div>
+                </div>
             </div>
             <Links/>
         </div>

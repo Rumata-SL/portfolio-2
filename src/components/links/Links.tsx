@@ -8,16 +8,16 @@ export const Links = () => {
     return (
         <div className={style.wrapper}>
 
-            <div>
+            <div className={style.container}>
                 <a href={"https://github.com/Rumata-SL"} target="_blank"><FaGithubAlt className={style.link} /></a>
             </div>
-            <div>
+            <div className={style.container}>
                 <a href={"https://github.com/Rumata-SL"} target="_blank"><FaLinkedin className={style.link}/></a>
             </div>
-            <div>
+            <div className={style.container}>
                 <a href={"https://github.com/Rumata-SL"} target="_blank"><FaTelegramPlane className={style.link}/></a>
             </div>
-            <div>
+            <div className={style.container}>
                 <a href={"https://github.com/Rumata-SL"} target="_blank"><SiCodewars className={style.link}/></a>
             </div>
 
