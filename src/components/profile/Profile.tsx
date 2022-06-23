@@ -22,7 +22,7 @@ export const Profile = () => {
                     <div className={style.avatarImg}></div>
                 </div>
             </div>
-            <Links/>
+
         </div>
     );
 };

@@ -8,6 +8,7 @@ import {Skills} from "./components/skills/Skills";
 // @ts-ignore
 import lines from "./components/profile/video/Lines.mp4"
 import {Works} from "./components/works/Works";
+import {Home} from "./components/home/Home";
 // import {Links} from "./components/links/Links";
 // @ts-ignore
 // import videoBG from "./components/profile/video/2.mp4"
@@ -31,7 +32,10 @@ function App() {
         <div className={"content"}>
             <div className={"wrapper"}>
                 <Routes>
-                    <Route path={"/"} element={<Navigate to={PATH.PROFILE}/>}/>
+
+                    <Route path={"/"} element={<Navigate to={PATH.HOME}/>}/>
+                    {/*<Route path={"/"} element={<Navigate to={PATH.PROFILE}/>}/>*/}
+                    <Route path={PATH.HOME} element={<Home/>}></Route>
                     <Route path={PATH.PROFILE} element={<Profile/>}></Route>
                     <Route path={PATH.SKILLS} element={<Skills/>}></Route>
                     <Route path={PATH.WORKS} element={<Works/>}></Route>
