@@ -79,14 +79,24 @@
         transform: translateY(0px);
     }
 }
-/*.icon{
+.icon{
     width: 40px;
     height: 40px;
     color: cyan;
-}*/
+    transform: scale(1);
+    transition: transform 0.6s;
+}
 .link{
     width: 40px;
     height: 40px;
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+.active{
+    /*width: 40px;*/
+    /*height: 40px;*/
+    transform: scale(1);
+    transition: transform 0.6s;
 }
 .link .icon{
     display: inline-block;
@@ -97,8 +107,8 @@
     text-decoration: none;
     /*background-color: white;*/
     color: cyan;
-    transform: scale(1);
-    transition: transform 0.6s;
+  /*  transform: scale(1);
+    transition: transform 0.6s;*/
     /*box-shadow: -4px -2px 32px -12px rgb(59, 122, 222) inset;*/
 }
 
