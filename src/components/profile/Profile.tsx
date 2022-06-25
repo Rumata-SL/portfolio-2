@@ -17,9 +17,9 @@ export const Profile = () => {
                                    cursor={'|'}
                                    className={style.dev}
                 />
-                <div className={style.avatar} >
+                {/*<div className={style.avatar} >
                     <div className={style.avatarImg}></div>
-                </div>
+                </div>*/}
             </div>
                 <Links/>
         </div>
