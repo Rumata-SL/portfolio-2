@@ -40,6 +40,8 @@ function App() {
                     <Route path={PATH.SKILLS} element={<Skills/>}></Route>
                     <Route path={PATH.WORKS} element={<Works/>}></Route>
                     <Route path={PATH.CONTACTS} element={<Contacts/>}></Route>
+                    <Route path={"*"} element={<div>Page not found</div>}></Route>
+
                 </Routes>
             </div>
             <div>
