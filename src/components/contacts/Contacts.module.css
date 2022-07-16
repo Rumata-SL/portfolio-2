@@ -122,6 +122,9 @@
 
 }
 @media screen and (max-width: 768px) {
+    .container{
+        justify-content: start;
+    }
     .containerText{
         width: 80%;
     }
