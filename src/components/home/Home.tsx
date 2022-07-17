@@ -2,8 +2,10 @@ import React from "react"
 // import Fade from 'react-reveal/Fade'
 import ReactTypingEffect from "react-typing-effect"
 import s from "./Home.module.css"
+import {Links} from "../links/Links";
 
 const Fade = require("react-reveal/Fade")
+
 export const Home = () => {
 
     return (
@@ -17,17 +19,21 @@ export const Home = () => {
                                       cursor={"|"}
                    />
                 </span>
-                    <Fade left delay={"1000"} duration={"1000"}>
-                        <h1>Hello, I'm</h1>
+                    <Fade left delay={"500"} duration={"1000"}>
+                        <p>Hello, I'm <span className={s.name}>Sergey</span>.</p>
                     </Fade>
-                    <Fade left delay={"2000"} duration={"2000"}>
-                        <h1><span className={s.name}>Sergey</span></h1>
+                    {/*<Fade left delay={"1000"} duration={"1500"}>
+                        <p><span className={s.name}>Sergey</span></p>
+                    </Fade>*/}
+                    <Fade left delay={"1500"} duration={"2000"}>
+                        <p>Welcome to </p>
                     </Fade>
-                    <Fade left delay={"3000"} duration={"3000"}>
-                        <h1>Welcome to my World.</h1>
+                    <Fade left delay={"2000"} duration={"2500"}>
+                        <p>my World.</p>
                     </Fade>
                 </div>
             </div>
+            <Links/>
         </div>
     )
 }

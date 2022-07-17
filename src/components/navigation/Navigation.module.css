@@ -85,6 +85,7 @@
     color: cyan;
     transform: scale(1);
     transition: transform 0.6s;
+    font-weight: 10;
 }
 .link{
     width: 40px;

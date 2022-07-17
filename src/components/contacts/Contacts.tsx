@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Contacts.module.css"
 
+const Zoom = require("react-reveal/Zoom")
 export const Contacts = () => {
     return (
         <div className={style.wrapper}>
@@ -18,7 +19,7 @@ export const Contacts = () => {
                     {/*</div>*/}
                 </form>
                 <button className={style.btn}>
-                    Send
+                    <Zoom right cascade timeout={"2000"}>отправить</Zoom>
                 </button>
             </div>
         </div>

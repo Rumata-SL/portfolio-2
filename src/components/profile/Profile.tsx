@@ -1,7 +1,7 @@
 import React from "react";
 import {Links} from "../links/Links";
 import style from "./Profile.module.css"
-import photo from "./me.png"
+import photo from "../../assets/img/me.png"
 
 export const Profile = () => {
     return (

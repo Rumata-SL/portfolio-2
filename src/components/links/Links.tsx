@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Links.module.css"
-import git from "./icons/github.png"
 import {FaGithubAlt, FaLinkedin, FaTelegramPlane} from "react-icons/fa";
 import {SiCodewars} from "@react-icons/all-files/si/SiCodewars";
 
