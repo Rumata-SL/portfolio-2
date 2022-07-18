@@ -76,9 +76,11 @@
 }
 
 .mainBlock .container .greeting p .name {
-    color: red;
+    /*color: red;*/
+    color: transparent;
+    -webkit-text-stroke: 0.1px red;
     display: inline-block;
-
+    /*font-size: 95px;*/
     font-family: 'Courgette', cursive;
 }
 
