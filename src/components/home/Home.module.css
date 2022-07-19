@@ -72,7 +72,7 @@
     line-height: 60px;
     color: #fff;
     margin: 0 0 15px 0;
-    font-family: 'Caveat', cursive;
+    /*font-family: 'Caveat', cursive;*/
 }
 
 .mainBlock .container .greeting p .name {

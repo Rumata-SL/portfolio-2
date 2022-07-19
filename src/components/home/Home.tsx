@@ -5,6 +5,7 @@ import s from "./Home.module.css"
 import {Links} from "../links/Links";
 
 const Fade = require("react-reveal/Fade")
+const Zoom = require("react-reveal/Zoom")
 
 export const Home = () => {
 
@@ -12,14 +13,14 @@ export const Home = () => {
         <div className={s.mainBlock} id="main">
             <div className={s.container}>
                 <div className={s.greeting}>
-                <span className={s.profession}>
+                        <span className={s.profession}>
                    <ReactTypingEffect text={["<Front-end developer/>"]}
                                       speed={100}
                                       eraseSpeed={10}
                                       cursor={"|"}
                    />
                 </span>
-                    <Fade left delay={"500"} duration={"1000"}>
+                    <Fade left delay={"300"} duration={"1200"}>
                         <p>Hello, I'm <span className={s.name}>Sergey</span>.</p>
                     </Fade>
                     {/*<Fade left delay={"1000"} duration={"1500"}>

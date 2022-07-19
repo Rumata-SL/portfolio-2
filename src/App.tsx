@@ -7,14 +7,15 @@ import {Contacts} from "./components/contacts/Contacts";
 import {Skills} from "./components/skills/Skills";
 import {Works} from "./components/works/Works";
 import {Home} from "./components/home/Home";
-import About from "./components/home/about/About";
+import {PageError} from "./components/error/PageError";
+
 
 const lines = require("./assets/video/Lines.mp4")
 
 function App() {
 
 
-  return (
+    return (
     <div className="App">
         <div className={"over"}></div>
         <video src={lines} autoPlay loop muted/>
@@ -23,15 +24,12 @@ function App() {
 
                 <Routes>
                     <Route path={"/"} element={<Navigate to={PATH.HOME}/>}/>
-                    {/*<Route path={"/"} element={<Navigate to={PATH.HOME}/>}/>*/}
-                    {/*<Route path={"/"} element={<Navigate to={PATH.PROFILE}/>}/>*/}
-                    <Route path={"/about/"} element={<About/>}></Route>
                     <Route path={PATH.HOME} element={<Home/>}></Route>
                     <Route path={PATH.PROFILE} element={<Profile/>}></Route>
                     <Route path={PATH.SKILLS} element={<Skills/>}></Route>
                     <Route path={PATH.WORKS} element={<Works/>}></Route>
                     <Route path={PATH.CONTACTS} element={<Contacts/>}></Route>
-                    <Route path={"*"} element={<div>Page not found</div>}></Route>
+                    <Route path={PATH.ERROR} element={<PageError/>}></Route>
                 </Routes>
 
             </div>
@@ -48,3 +46,6 @@ export default App;
 
 // @ts-ignore
 // import lines from "./assets/video/Lines.mp4"
+
+/*
+*/

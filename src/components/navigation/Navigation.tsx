@@ -13,6 +13,7 @@ export enum PATH {
     CONTACTS = "/contacts/",
     SKILLS = "/skills/",
     WORKS = "/works/",
+    ERROR = "*"
 }
 
 type IsActive = {
