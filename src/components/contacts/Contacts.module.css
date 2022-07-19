@@ -104,6 +104,7 @@
     border: 1px solid white;
     transform: scale(1.015);
     transition: transform 0.8s;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
